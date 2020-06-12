@@ -1,0 +1,26 @@
+{
+  "name": "robofriends-ssr",
+  "version": "1.0.0",
+  "description": "Server side rendering for robofriends application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jothamardel/robofriends-ssr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jothamardel/robofriends-ssr/issues"
+  },
+  "homepage": "https://github.com/jothamardel/robofriends-ssr#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
