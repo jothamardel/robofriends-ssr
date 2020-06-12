@@ -1,7 +1,7 @@
 import Card from '../card/card';
-import { robots } from '../../utils/data';
 
-const CardList = () => (
+
+const CardList = ({ robots }) => (
   robots.map((robot) => (
     <Card 
       key={robot.id}
