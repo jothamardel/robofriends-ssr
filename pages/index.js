@@ -1,16 +1,24 @@
 import React from 'react';
 import CardList from '../components/cardList/cardList';
 import SearchBox from '../components/searchBox/searchBox';
-import { robots } from '../utils/data';
 
 
 class Index extends React.Component {
   constructor() {
     super();
     this.state = {
-      robots: robots,
+      robots: [],
       seachfield: ''
     }
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users', {
+      method: 'get'
+    })
+    .then((response) => response.json())
+    .then((data) => this.setState({ robots: data }))
+    .catch((error) => console.log(error.message))
   }
 
   onSearchChange = (event) => {
